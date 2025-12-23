@@ -1,4 +1,473 @@
+
+<h1 align="right">Date : 22-12-2025</h1>
+
+#  HTML & JavaScript – Basics Overview
+
+---
+
+##  HTML (HyperText Markup Language)
+
+### What is HTML?
+- HTML stands for **HyperText Markup Language**
+- Used to **build web pages**
+- HTML consists of a **series of elements**
+- Current version: **HTML5**
+- Introduced in **1991**
+- Invented by **Tim Berners-Lee**
+
+---
+
+##  HTML Tags
+
+### What are Tags?
+- Tags are **predefined keywords**
+- Enclosed within **angle brackets `< >`**
+- Most tags have **opening and closing** forms
+
+---
+
+##  Types of HTML Tags 👍
+
+### 1️ Paired Tags
+Paired tags contain **both opening and closing tags**.
+
+#### a) Heading Tags
+```html
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+```
+
+#### b) Formatting Tags
+```html
+<b>Bold</b>
+<strong>Strong</strong>
+<i>Italic</i>
+<em>Emphasis</em>
+<sub>Subscript</sub>
+<sup>Superscript</sup>
+<mark>Marked</mark>
+<strike>Strike</strike>
+<u>Underline</u>
+```
+
+#### c) Other Tags
+```html
+<div></div>
+<span></span>
+<p></p>
+```
+
+---
+
+### 2️ Unpaired / Self-Closing Tags
+```html
+<br>
+<hr>
+<img>
+<input>
+<link>
+<meta>
+```
+
+---
+
+##  Media Tags (HTML5)
+
+Media tags are used to **display multimedia content** like images, audio, and video.
+
+### Common Media Tags:
+```html
+<img src="image.jpg" alt="sample image">
+<audio controls>
+  <source src="audio.mp3">
+</audio>
+
+<video controls width="300">
+  <source src="video.mp4">
+</video>
+```
+
+### Uses:
+- Display images
+- Play audio files
+- Play videos on web pages
+
+---
+
+##  Table Tags
+
+Tables are used to **display data in rows and columns**.
+
+### Common Table Tags:
+- `<table>`
+- `<tr>` – table row
+- `<th>` – table heading
+- `<td>` – table data
+
+Example:
+```html
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Ashoka</td>
+    <td>22</td>
+  </tr>
+</table>
+```
+
+### Uses:
+- Display reports
+- Student marks
+- Tabular data
+
+---
+
+##  List Tags
+
+Lists are used to **group related items**.
+
+### Types of Lists:
+
+#### 1️ Ordered List
+```html
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JS</li>
+</ol>
+```
+
+#### 2️ Unordered List
+```html
+<ul>
+  <li>React</li>
+  <li>Node</li>
+  <li>MongoDB</li>
+</ul>
+```
+
+#### 3️ Description List
+```html
+<dl>
+  <dt>HTML</dt>
+  <dd>Markup Language</dd>
+</dl>
+```
+
+### Uses:
+- Navigation menus
+- Display items
+- Content organization
+
+---
+
+##  Semantic Tags (HTML5)
+
+Semantic tags clearly describe **meaning of content** to browser and developers.
+
+### Common Semantic Tags:
+```html
+<header></header>
+<nav></nav>
+<section></section>
+<article></article>
+<aside></aside>
+<footer></footer>
+```
+
+### Uses:
+- Improves SEO
+- Better readability
+- Accessibility support
+- Structured layout
+
+---
+
+
+#  JavaScript (Overview)
+
+### What is JavaScript?
+- JavaScript is a **scripting & programming language**
+- Used to build **dynamic web pages**
+- Supports **DOM manipulation**
+- Fetch data from **APIs**
+- Single-threaded with **single call stack**
+
+---
+
+
+---
+
+##  Methods to Apply JavaScript
+
+### 1️ Internal JavaScript
+```html
+<script>
+  console.log("Hello JavaScript");
+</script>
+```
+
+### 2️ External JavaScript
+```html
+<script src="script.js"></script>
+```
+
+---
+
+##  Variables in JavaScript
+
+### What is a Variable?
+- Variable is a **named memory location**
+- Used to store data or information
+- Value can change **multiple times during execution**
+
+### Variable Keywords 👍
+- `let`
+- `var`
+- `const`
+
+Example:
+```js
+let name = "Ashoka";
+const age = 22;
+```
+
+---
+
+##  Data Types in JavaScript
+(`typeof` is used to check datatype)
+
+### 1️ Primitive Data Types  
+*(Mutable in nature / object reference)*
+
+- number
+- string
+- boolean
+- null
+- undefined
+- bigint
+
+---
+
+### 2️ Non-Primitive Data Types  
+*(Immutable in nature / object de-reference)*
+
+- Arrays
+- Functions
+- Objects
+
+---
+
+##  Functions in JavaScript
+
+Functions are **blocks of code** that execute when called.
+
+### Types of Functions:
+1. Named Function  
+2. Anonymous Function  
+3. First-Class Function  
+4. Function Expression  
+5. Immediately Invoked Function (IIFE)  
+6. Arrow Function (ES6)  
+7. Nested Function  
+8. Higher Order Function  
+9. Callback Function  
+10. Generator Function  
+
+Example:
+```js
+function greet() {
+  console.log("Hello");
+}
+```
+
+---
+
+##  Loops in JavaScript
+
+Loops are used to **repeat execution** of a block of code.
+
+### Types of Loops:
+- for loop
+- while loop
+- do-while loop
+- for-in
+- for-of
+- forEach
+
+Example:
+```js
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+```
+
+---
+
+
+##  JavaScript – DOM, BOM & Web Storage Guide
+
+---
+
+[Click here to view DOM in JavaScript Diagram](https://viewer.diagrams.net/index.html?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=DOM%20IN%20JAVASCRIPT.drawio&dark=1#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1wX_N7YJu17-dNlZGfupcKyvlNTD-s39u%26export%3Ddownload#%7B%22pageId%22%3A%22w0W7gVwtxNn_7I0n7kZZ%22%7D)
+
+---
+
+##  DOM (Document Object Model)
+
+The **DOM** represents the HTML document as a **tree structure** where JavaScript can access and manipulate elements.
+
+### Uses of DOM:
+- Change HTML content
+- Modify styles
+- Handle user events
+- Create dynamic web pages
+
+---
+
+##  DOM Selectors
+
+DOM selectors are used to **select HTML elements**.
+
+### Common DOM Selectors:
+```js
+document.getElementById("id");
+document.getElementsByClassName("className");
+document.getElementsByTagName("tagName");
+document.querySelector(".class");
+document.querySelectorAll("div");
+```
+
+---
+
+##  DOM Methods
+
+Used to **create, update, delete HTML elements**.
+
+### Common DOM Methods:
+```js
+document.createElement("div");
+document.appendChild(element);
+document.removeChild(element);
+document.replaceChild(newNode, oldNode);
+element.setAttribute("class", "box");
+element.getAttribute("id");
+```
+
+---
+
+##  DOM Events
+
+Events are actions performed by the **user or browser**.
+
+### Common DOM Events:
+- click
+- mouseover
+- mouseout
+- keyup
+- keydown
+- submit
+- change
+- load
+
+### Event Example:
+```js
+document.getElementById("btn").addEventListener("click", () => {
+  alert("Button Clicked!");
+});
+```
+
+---
+
+##  BOM (Browser Object Model)
+
+BOM allows JavaScript to **interact with the browser**.
+
+### BOM Objects:
+- window
+- screen
+- location
+- history
+- navigator
+
+---
+
+##  Window Object
+
+The `window` object is the **top-level object** in BOM.
+
+### Common Window Methods:
+```js
+window.alert("Hello");
+window.confirm("Are you sure?");
+window.prompt("Enter name");
+```
+
+### Window Properties:
+```js
+window.innerWidth;
+window.innerHeight;
+```
+
+---
+
+##  Local Storage
+
+Local Storage is used to **store data permanently** in the browser.
+
+### Features:
+- Data persists even after browser close
+- Stores data as key-value pairs
+
+### Example:
+```js
+localStorage.setItem("username", "Ashoka");
+localStorage.getItem("username");
+localStorage.removeItem("username");
+localStorage.clear();
+```
+
+---
+
+##  Session Storage
+
+Session Storage stores data **temporarily**.
+
+### Features:
+- Data cleared when tab is closed
+- Used for session-based data
+
+### Example:
+```js
+sessionStorage.setItem("token", "abc123");
+sessionStorage.getItem("token");
+sessionStorage.removeItem("token");
+sessionStorage.clear();
+```
+
+---
+
+##  LocalStorage vs SessionStorage
+
+| Feature | localStorage | sessionStorage |
+|------|-------------|----------------|
+| Persistence | Permanent | Until tab closes |
+| Storage Limit | ~5MB | ~5MB |
+| Scope | All tabs | Single tab |
+
+
+---
+
+
 <h1 align="right">Date : 23-12-2025</h1>
+
 #  React – Basic Concepts & Overview
 
 ##  What is React?
