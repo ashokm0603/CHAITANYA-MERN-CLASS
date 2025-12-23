@@ -203,8 +203,6 @@ Semantic tags clearly describe **meaning of content** to browser and developers.
 ---
 
 
----
-
 ##  Methods to Apply JavaScript
 
 ### 1️ Internal JavaScript
