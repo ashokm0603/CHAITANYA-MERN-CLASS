@@ -1,7 +1,7 @@
 
 <h1 align="right">Date : 22-12-2025</h1>
 
-#  HTML & JavaScript – Basics Overview
+#  HTML 
 
 ---
 
