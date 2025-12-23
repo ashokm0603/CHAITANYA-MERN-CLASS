@@ -1,0 +1,100 @@
+HTML: 
+----
+    ->HTML Stands for Hyper text markup language used to build web pages 
+    ->html contains series of HTML elements 
+    ->Present of HTML is HTML-5
+    ->HTML is introduced in the year 1991 by the developer "tem bereners lie"
+
+HTML tags:  
+------- --
+    ->Tags are  nothing but predefine words which are enclose with opening and closing angular brackets 
+    ->Types of Tags 👍
+        1.Paired Tags 
+            ->Any tags which have both opening and closing tags thats we called as Paired Tags 
+            ->Ex: 
+                1. Heading tags 
+                    Ex: 
+                          <h1>heading-1</h1>
+                          <h2>heading-2</h2>
+                          <h3>heading-3</h3>
+                          <h4>heading-4</h4>
+                          <h5>heading-5</h5>
+                          <h6>heading-6</h6>
+
+                2. Formatting tags : 
+                        Ex: 
+                            1. <b></b>
+                            2. <strong></strong>
+                            3. <i></i>
+                            4. <em></em>
+                            5. <sub></sub>
+                            6. <sup></sup>
+                            7. <mark></mark>
+                            8. <strick></strick>
+                            9. <u></u>
+                3. other tags : 
+                        Ex: <div></div> , <span></span>, <p></p>..etc
+
+        2. Unpaired tags / self closing tags : 
+            ->Any tags which have only opening tag thats we called as UnPaired Tags 
+
+
+Javascript: 
+-----------
+
+        ->Javascript is the Scripting language as well as a programming language 
+
+        ->JS Declarative in Nature 
+        ->JS Contains Single call stack 
+
+        ->Javascript is used to build dynamic web applications 
+        -> by using JS we can add functionality to the Web pages 
+        ->here can achieve DOM(Document object model) functionalities 
+        ->Using JS We can fetch Data from the Server (API)
+
+
+Method To apply JS : 
+    1. Internal JS 
+    2. External JS
+
+
+variables in JS : 
+------------------
+    ->Variable are the named memory location used to store Data or information and it can change N number of time during execution 
+
+    ->variable  Keywords 👍
+        1. let 
+        2. var 
+        3. const 
+
+
+DataTypes : (typeof is used to check datatype for variables )
+-------------------------
+    1. primitive DataTypes /mutable in nature / object reference
+        i. number 
+        ii. string 
+        iii. boolean 
+        iv. null 
+        v. undefine  
+        vi. bigint 
+     
+    2. non-primitive DataTypes /immutable in nature / object de-reference
+        i. Arrays 
+        ii. functions 
+        iii. objects 
+
+        ii. functions :
+                ->functions are the block statements which will execute when where we called the function
+
+                1. Anonymous Function 
+                2. named function/ normal function 
+                3. first class function 
+                4. functional expression
+                5. immediate invoking function / self calling function 
+                6. Arrow function (ES 6)
+                7. nested function 
+                8. higher order function 
+                9. callback function 
+                10. generator function
+                
+

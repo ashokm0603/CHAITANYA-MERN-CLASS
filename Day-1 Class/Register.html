@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      form {
+        background-color: bisque;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        text-align: center;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        text-shadow: 5px 5px 5px aliceblue;
+        margin-bottom: 30px;
+      }
+
+      label {
+        font-weight: bold;
+        font-style: italic;
+      }
+      label::after {
+        content: "*";
+        color: red;
+      }
+      fieldset {
+        width: 400px;
+        border-radius: 10px 50px;
+        padding: 30px;
+        background-image: linear-gradient(45deg, mediumorchid, powderblue);
+      }
+
+      button{
+        background-color: black;
+        color: aliceblue;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 10px;
+        border: none;
+
+      }
+      input, select{
+        padding: 6px 10px;
+        border-radius: 10px;
+        border: none;
+        font-style: italic;
+      }
+      button:hover{
+        background-color: rgba(0, 0, 0, 0.733);
+        transform:scale(1.1);
+      }
+      #btn-container{
+        display: flex;
+
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Register Form</legend>
+        <h1>SignUP</h1>
+        <label for="">First Name:</label>
+        <input type="text" id="fname" placeholder="Enter FirstName" required />
+        <br /><br />
+
+        <label for="">Last Name :</label>
+        <input type="text" id="lname" placeholder="Enter LastName" required />
+        <br /><br />
+        <label for="">Gender :</label>
+        <input type="radio" value="Male" name="gender" />Male
+        <input type="radio" value="Female" name="gender" />Female
+
+        <br />
+        <br />
+        <label for="">City :</label>
+        <select>
+          <option value="">Choose city</option>
+          <option name="city" value="Warangal">Warangal</option>
+          <option name="city" value="Guntur">Guntur</option>
+          <option name="city" value="Vijayawada">Vijayawada</option>
+          <option name="city" value="Kochi">Kochi</option>
+          <option name="city" value="Bangalore">Bangalore</option>
+        </select>
+        <br /><br />
+        <label for="">Email :</label>
+        <input type="email" id="email" placeholder="admin@gmail.com " required />
+        <br /><br />
+        <label for="">Password :</label>
+        <input type="password" id="psw" placeholder="admin@123 " required /> <br /><br />
+        <label for="">Phone No :</label>
+        <input type="tel" id="phn" placeholder="+91 " required /> <br /><br />
+        <div id="btn-container">
+          <button type="submit" id="btn">SignUP</button>
+          <button type="reset">Cancel</button>
+        </div>
+      </fieldset>
+    </form>
+
+
+
+    <script>
+           let fname=document.getElementById("fname");
+           let lname=document.getElementById("lname");
+           let email=document.getElementById("email");
+           let phn=document.getElementById("phn");
+           let psw=document.getElementById("psw");
+           
+           let gender=document.getElementsByName("gender")
+           let city=document.getElementsByName("city")
+
+          
+           let btn=document.getElementById("btn")
+
+           btn.addEventListener("click",(e)=>{
+            e.preventDefault()
+            localStorage.setItem( "FName",fname.value);
+            localStorage.setItem( "LName",lname.value);
+            localStorage.setItem("Email", email.value);
+            localStorage.setItem( " PhoneNo",phn.value);
+            localStorage.setItem("Password", psw.value);
+            
+
+            gender.forEach((g)=>{
+                if(g.checked){
+                    localStorage.setItem("Gender", g.value);
+                    
+                }
+            })
+            city.forEach((c)=>{
+                if(c.selected){
+                    localStorage.setItem( "City", c.value);
+                    
+                }
+            })
+
+            alert("User Register Successfully....")
+           })
+           
+
+           
+    </script>
+  </body>
+</html>

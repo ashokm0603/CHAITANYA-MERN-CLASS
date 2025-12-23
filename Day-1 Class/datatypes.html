@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datatype's in JS</title>
+  </head>
+  <body>
+    <script>
+      let a = 10;
+      a = 10.56;
+      console.log(a, ":", typeof a);
+      let b = "java";
+      console.log(b, ":", typeof b);
+      let c = true;
+      console.log(c, ":", typeof c);
+
+      let d = null;
+      console.log(d, ":", typeof d);
+
+      console.log(typeof e);
+
+      let f =
+        528725782721253647992346534243569843574385438436879029948975258527451442421n;
+      console.log(typeof f);
+
+      let arr = [10, 20, 30, 40, 50, 0];
+      let arr1 = ["java", 20, true, null];
+
+      console.log(arr);
+      console.log(arr1);
+      console.log(arr[0]);
+
+      //for-in used display array index
+      for (i in arr1) {
+        console.log(i);
+      }
+
+      //for-of
+      for (val of arr1) {
+        console.log(val);
+      }
+
+      arr1.forEach((a, i, newarr) => {
+        console.log(a, "->", i, "->", newarr);
+      });
+      for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+      }
+
+
+
+     let  obj= {
+        name:"ravi",
+        role:"developer"
+     }
+
+     console.log(Object.keys(obj));
+     console.log(Object.values(obj));
+     console.log(Object.entries(obj));
+     
+    </script>
+  </body>
+</html>

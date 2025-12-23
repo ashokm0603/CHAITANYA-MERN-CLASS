@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //parameters
+      //   function add(a, b) {
+      //     console.log(a, b);
+      //     return {
+      //         name:"sai"
+      //     }
+      //   }
+      //   console.log(add(10, 20));
+
+      //   let res=add(50, 50);
+      //   console.log(res);
+
+      //   let fun = function (a,b) {
+      //     console.log(a,b);
+      //     console.log("HEy this first class function");
+      //   };
+
+      //   fun()
+      //   fun(60,90)
+
+      //IIF
+      //   (function () {
+      //     let username = "admin@123";
+      //     let password = "admin@edu.in";
+      //     console.log(username);
+      //     console.log(password);
+      //     return username;
+      //   })();
+
+      //   let arrowFun = () => {
+      //     let a = 10;
+      //     let b = 60;
+      //     console.log("This  is arrow function", a, b);
+      //   };
+
+      //   arrowFun();
+      //   arrowFun();
+      //   arrowFun();
+      //   arrowFun();
+
+      //   let arr3 = () => {
+      //     return 10;
+      //   };
+      //   console.log(arr3());
+
+      //  var arr4=()=>{
+      //     console.log(this);
+      //   }
+
+    //   //   arr4()
+
+    //   function outerFun() {
+    //     let a = 10;
+    //     function innerFun() {
+    //       a++;
+    //       console.log(a);
+    //     }
+    //     return innerFun;
+    //   }
+    //   let result = outerFun();
+    //   console.log(result);
+      
+    //   result();
+    //   result();
+
+
+    function homePage(register, login){
+        console.log("This Is Landing Page..");
+    }
+    function loginPage(){
+        console.log("This Is Login Page..");
+    }
+    function RegisterPage(){
+        console.log("This Is Register Page..");
+    }
+
+    homePage(RegisterPage(), loginPage());
+
+
+    function display(admin, user){
+        admin();
+        user();
+        
+    }
+    display(()=>{
+        console.log("Admin Portal");
+        
+    } ,()=>{
+        console.log("User Portal");
+    } )
+
+
+    console.log(window.innerWidth);
+    
+
+    console.error("Error");
+    console.warn("Error");
+
+    let arr=[10,20,30,40,50]
+
+    console.table(arr)
+    
+    </script>
+  </body>
+</html>
