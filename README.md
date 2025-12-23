@@ -1,4 +1,3 @@
-
 <h1 align="right">Date : 22-12-2025</h1>
 
 #  HTML 
@@ -711,9 +710,7 @@ const notify = () => {
 
 ---
 
-### MongoDB Diagram  
-👉 View the full diagram here:  
-https://drive.google.com/file/d/1NiojH4OZ0pZ5YRgUSWjCcuhjyehTk6_M/view?usp=sharing
+[Click here to view MongoDB Database, Collection & Document Diagram](https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=mongoDB.drawio&dark=1#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1NiojH4OZ0pZ5YRgUSWjCcuhjyehTk6_M%26export%3Ddownload)
 
 ---
 
