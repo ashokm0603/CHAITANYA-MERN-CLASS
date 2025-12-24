@@ -1,0 +1,60 @@
+React: 
+------
+    ->small JS Library 
+    ->Component Based 
+    ->virtual DOM
+    ->Using React we build SPA(single page Applications )
+
+
+We Create React APP : 
+    1. CLI (Command line Interface )
+        ->Sample react app (using npx )  -npx create-react-app app_name
+        ->React+vite (using Npm)         -npm create vite@latest
+
+
+    2. CDN (Content Delivery network )
+
+
+
+Components in React : 
+----------------------
+    ->Smallest UI Blocks in web page is called as Components
+    ->Types of Components : 
+        1. Class based Components 
+                ->here we can declared class based Components using "class" 
+                ->class based Components are stateful
+                ->CBC contains this keyword , super keyword , render method and life cycle methods 
+
+
+        2. function based Components 
+                ->This Components declared using Function (arrow function, functional expression) 
+                ->FBC is stateless Component 
+                ->FBC not contains this keyword , super keyword , render method , life cycle methods  not present 
+
+JSX(javascript and XML ):
+    ->File name starts with uppercase
+    ->JSX will support javascript expression {}
+    ->JSX file will contains both html, js code
+    ->JSX supports empty fragments <> </>
+    ->If JSX return multiple html tags , we need to write all tags in one parent tag  
+
+States : 
+---------
+    ->State is used to hold the value or data 
+    ->state are mutable
+    
+In FBC states : 
+---------------
+    ->in react version 16.8  hooks are introduce
+    ->hooks are to make FBC is stateful 
+    ->hooks are present only in FBC 
+    ->Ex: useState() , useNavigate() , useContext() , useMemo() , useEffect()...etc 
+
+
+Props : 
+------
+    ->Props are used transfer data from one Component to another another Component 
+    ->props are immutable
+    ->React unidirectional Data flow
+
+
